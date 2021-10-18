@@ -58,7 +58,7 @@ public class main {
         int d = 15;
         int e = 9;
         int result = a * (b + (c - d * e));
-        result = - result;
+        result *= -1;
         System.out.println(result);
 
         // Задача 7
