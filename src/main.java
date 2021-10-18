@@ -1,5 +1,5 @@
 public class main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // Задача 1
         byte aa = 1;
         short bb = 2;
@@ -41,12 +41,12 @@ public class main {
         int mashaSalary1 = 67_760;
         int denisSalary1 = 83_690;
         int kristinaSalary1 = 76_230;
-        int mashaIncrease = mashaSalary1 / 10;
-        int mashaSalary2 = mashaSalary1 + mashaIncrease;
-        int denisIncrease = denisSalary1 / 10;
-        int denisSalary2 = denisSalary1 + denisIncrease;
-        int kristinaIncrease = kristinaSalary1 / 10;
-        int kristinaSalary2 = kristinaSalary1 + kristinaIncrease;
+        int mashaSalary2 = (int) (mashaSalary1 * 1.1);
+        int mashaIncrease = (mashaSalary2 - mashaSalary1) * 12;
+        int denisSalary2 = (int) (denisSalary1 * 1.1);
+        int denisIncrease = (denisSalary2 - denisSalary1) * 12;
+        int kristinaSalary2 = (int) (denisSalary1 * 1.1);
+        int kristinaIncrease = (kristinaSalary2 - kristinaSalary1) * 12;
         System.out.println("Маша теперь получает " + mashaSalary2 + " рублей. Годовой доход вырос на " + mashaIncrease + " рублей");
         System.out.println("Денис теперь получает " + denisSalary2 + " рублей. Годовой доход вырос на " + denisIncrease + " рублей");
         System.out.println("Кристина теперь получает " + kristinaSalary2 + " рублей. Годовой доход вырос на " + kristinaIncrease + " рублей");
@@ -64,14 +64,15 @@ public class main {
         // Задача 7
         int a1 = 5;
         int b1 = 7;
-        System.out.println("a=" + a1+ "; b=" + b1);
-        a1 = 7;
-        b1 = 5;
-        System.out.println("a=" + a1+ "; b=" + b1);
+        System.out.println("a=" + a1 + "; b=" + b1);
+        a1 = a1 + b1;
+        b1 = a1 - b1;
+        a1 = a1 - b1;
+        System.out.println("a=" + a1 + "; b=" + b1);
 
         // Задача 8
         int a2 = 938;
         int b2 = a2 % 100 / 10;
-        System.out.println("a="+ a2+ "; b=" + b2);
+        System.out.println("a=" + a2 + "; b=" + b2);
     }
 }
